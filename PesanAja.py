@@ -14,7 +14,7 @@ st.write("3. Hotel Mentari / Kamar   @500000")
 st.write("4. Hotel Tulip / Kamar     @600000")
 st.write("5. Hotel Anggrek / Kamar   @700000")
 
-booking_hotel = int(st.text_input("Masukkan Nomor Hotel :"))
+booking_hotel = st.text_input("Masukkan Nomor Hotel :")
 
 if booking_hotel==1:
    harga = 300000
@@ -28,7 +28,7 @@ elif booking_hotel==5:
      harga = 700000
 else :
     while True:
-        booking_hotel = int(st.number_input("Masukkan Nomor Hotel :"))
+        booking_hotel = st.number_input("Masukkan Nomor Hotel :")
         if booking_hotel==1 or booking_hotel==2 or booking_hotel==3 or booking_hotel==4 or booking_hotel==5:
             if booking_hotel==1:
                 harga = 300000
